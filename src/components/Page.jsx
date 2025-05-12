@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { ChevronDown, Bone, PawPrintIcon as Paw, Heart, Mail, Menu, X, Anchor, BikeIcon, Calendar, Compass, Fish, Shell, Star, Waves, } from "lucide-react";
+import { ChevronDown, ChevronRight,Bone, PawPrintIcon as Paw, Heart, Mail, Menu, X, Anchor, BikeIcon, Calendar, Compass, Fish, Shell, Star, Waves, } from "lucide-react";
 import { roadmapItems,characters, bikini } from "../constants";
 import { motion } from "framer-motion"
 import { cn } from '../lib/utils';
@@ -58,7 +58,7 @@ const Page = () => {
               className="flex items-center gap-2"
             >
               {/* <Paw className="h-6 w-6 text-amber-300" /> */}
-              <img src='/RockyLogoNew.png' className='h-14 w-14 py-0'/>
+              <img src='/logorockywbg.png' className='w-8 h-8 py-0'/>
               <span className="text-xl font-bold">Pawpal</span>
             </motion.div>
 
@@ -136,7 +136,7 @@ const Page = () => {
                   onClick={() => scrollToSection("about")}
                   className="bg-purple-800 text-purple-50 px-8 py-3 rounded-full text-lg font-medium flex items-center gap-2 hover:bg-purple-900 transition-colors"
                 >
-                  Learn more <ChevronDown className="h-5 w-5" />
+                  Learn more <ChevronRight className="h-5 w-5" />
                 </button>
               </motion.div>
             </motion.div>
